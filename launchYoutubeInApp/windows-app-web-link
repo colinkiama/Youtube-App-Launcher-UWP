@@ -1,0 +1,7 @@
+﻿[
+  {
+    "packageFamilyName": "launchInYoutubeApp_4st3536zmpfe6",
+    "paths": [ "*" ],
+    "excludePaths": [ "/news/*", "/blog/*" ]
+  }
+]

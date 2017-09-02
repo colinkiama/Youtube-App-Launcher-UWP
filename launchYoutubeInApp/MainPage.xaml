@@ -1,0 +1,34 @@
+﻿<Page x:Class="launchYoutubeInApp.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:launchYoutubeInApp"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource SystemControlBackgroundAccentBrush}">
+        <Button Name="launchButton"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Click="launchButton_Click"
+                FontSize="36"
+                FontWeight="SemiBold"
+                Background="{ThemeResource SystemControlForegroundAccentBrush}">
+            <Button.Content>
+                <StackPanel>
+                    <Image Source="ms-appx:///Assets/Square150x150Logo.png"
+                           Height="100"
+                           Width="100" />
+                    <TextBlock Text="Launch" />
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+        <TextBlock TextWrapping="Wrap"
+                   TextAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="12"><Bold>How to use the app:</Bold> Select a YouTube link, click 'launch', then your video will launch in another Youtube app.</TextBlock>
+
+    </Grid>
+
+</Page>
