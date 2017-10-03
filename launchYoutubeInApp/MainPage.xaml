@@ -7,27 +7,50 @@
       mc:Ignorable="d">
 
     <Grid Background="{ThemeResource SystemControlBackgroundAccentBrush}">
-        <Button Name="launchButton"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Click="launchButton_Click"
-                FontSize="36"
-                FontWeight="SemiBold"
-                Background="{ThemeResource SystemControlForegroundAccentBrush}">
-            <Button.Content>
-                <StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+                <StackPanel HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Canvas.ZIndex="50">
                     <Image Source="ms-appx:///Assets/Square150x150Logo.png"
-                           Height="100"
-                           Width="100" />
-                    <TextBlock Text="Launch" />
+                           Height="200"
+                           Width="200" />
+                    <TextBlock Text="Launch" TextAlignment="Center"
+                               FontWeight="SemiBold"
+                               FontSize="36"/>
                 </StackPanel>
-            </Button.Content>
-        </Button>
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom">
+            <Button Name="launchPerfectTubeButton"
+                    Click="launchPerfectTubeButton_Click"
+                    FontWeight="SemiBold"
+                    Content="Launch in Perfect Tube" 
+                    HorizontalContentAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="200"/>
 
+            <Button Name="launchmyTubeButton"
+                    Click="launchmyTubeButton_Click"
+                    FontWeight="SemiBold"
+                    Content="Launch in myTube" 
+                    HorizontalContentAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="200"
+                    Margin="0,12,0,0"/>
+
+        </StackPanel>
         <TextBlock TextWrapping="Wrap"
                    TextAlignment="Center"
                    VerticalAlignment="Bottom"
-                   Margin="12"><Bold>How to use the app:</Bold> Select a YouTube link, click 'launch', then your video will launch in another Youtube app.</TextBlock>
+                   Margin="12"
+                   Grid.Row="2">
+            <Bold>How to use the app:</Bold> Select a YouTube link, click 'launch', then your video will launch in another Youtube app.
+        </TextBlock>
 
     </Grid>
 

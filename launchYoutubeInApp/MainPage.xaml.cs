@@ -27,18 +27,6 @@ namespace launchYoutubeInApp
             
         }
 
-        private async void launchButton_Click(object sender, RoutedEventArgs e)
-        {
-          
-            //Testing 
-            //string videoID = getVideoIDFromUrl("https://www.youtube.com/watch?v=9bDEQJ2w4KA");
-
-
-            string videoID = getVideoIDFromUrl(url);
-            await Launcher.LaunchUriAsync(new Uri($"rykentube:Video?ID={videoID}"));
-            Application.Current.Exit();
-            //await Launcher.LaunchUriAsync(new Uri("mytube://"));
-        }
 
        
 
@@ -132,7 +120,29 @@ namespace launchYoutubeInApp
             return videoID;
         }
 
-        
+        private async void launchmyTubeButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Testing 
+            //string videoID = getVideoIDFromUrl("https://www.youtube.com/watch?v=9bDEQJ2w4KA");
+
+
+            string videoID = getVideoIDFromUrl(url);
+            await Launcher.LaunchUriAsync(new Uri($"rykentube:Video?ID={videoID}"));
+            Application.Current.Exit();
+            //await Launcher.LaunchUriAsync(new Uri("mytube://"));
+        }
+
+        private async void launchPerfectTubeButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Testing 
+            //string videoID = getVideoIDFromUrl("https://www.youtube.com/watch?v=9bDEQJ2w4KA");
+
+
+            string videoID = getVideoIDFromUrl(url);
+            await Launcher.LaunchUriAsync(new Uri($"perfecttube:{videoID}"));
+            Application.Current.Exit();
+            //await Launcher.LaunchUriAsync(new Uri("mytube://"));
+        }
     }
 }
 
