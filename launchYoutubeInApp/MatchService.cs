@@ -15,7 +15,7 @@ namespace launchYoutubeInApp
         Regex rx;
 
         public MatchService()
-        {
+        {   
             rx = new Regex(videoIDMatchRegexString, RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
