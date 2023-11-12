@@ -1,0 +1,40 @@
+repo_name: colinkiama/Youtube-App-Launcher-UWP
+report_id: 7cbb35bd1e6dda5991e364f75bb89759
+repo_type: Public
+timestamp: '2023-11-12T07:08:34+00:00'
+requested_by: colinkiama
+provider: github
+branch: master
+detected_tools_count: 3
+tools:
+- name: C#
+  description: Simple, general-purpose, object-oriented programming language for the
+    .NET platform
+  website_url: http://csharp.net
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Visual Studio
+  description: State-of-the-art tools and services that you can use to create great
+    apps for devices, the cloud, and everything in between.
+  website_url: http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Integrated Development Environment
+  image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source: launchYoutubeInApp.sln
+  last_updated_by: Colin Kiama
+  last_updated_on: 2017-09-02 14:51:55.000000000 Z
